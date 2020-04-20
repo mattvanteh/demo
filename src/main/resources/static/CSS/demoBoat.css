@@ -1,0 +1,143 @@
+/* Only for snippet */
+.double-nav .breadcrumb-dn {
+  color: #fff;}
+
+  #boat {
+  background-image: url(https://mcsebc.org/wp-content/uploads/2016/09/SEBC18lb_13747.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+       text align: center;
+  }
+
+
+  #menu {
+    background-image: url(https://mcsebc.org/wp-content/uploads/2016/09/SEBC18lb_13747.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+     text align: center;
+  }
+
+  #guest{
+  background-image: url(https://d3lp4xedbqa8a5.cloudfront.net/imagegen/pcr/628/471/s3/digital-cougar-assets/tradeaboatnz/2020/04/01/Misc/Leisure_28_Rand-Boats-2.jpg);
+      background-size: cover;
+       text align: center;
+  }
+
+  #reservation {
+    background-image: url(https://mcsebc.org/wp-content/uploads/2016/09/SEBC18lb_13747.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #formCheck {
+    background-color: rgba(51, 170, 51, 0.4);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  #formEditBoats {
+    display: none;
+  }
+  #marq {
+    font-size: 70px;
+    color: red;
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-stretch: expanded;
+    font-weight: bold;
+  }
+  #reservationContainer {
+    background: rgb(153, 153, 153);
+
+    display: none;
+  }
+  #reservationListContainer {
+    display: none;
+    background: #add8e6;
+  }
+
+  #formBoat {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: auto;
+
+    width: auto;
+    align-content: center;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  #tableShowBoat {
+    background-color: lightblue;
+  }
+
+  #tableInputBoat {
+    display: none;
+  }
+  #tableShowBoat {
+    display: none;
+  }
+
+  #saveButton {
+    display: none;
+  }
+  #idInput {
+    display: none;
+  }
+  #deleteBtn {
+    display: none;
+  }
+  #deleteInputTitle {
+    display: none;
+  }
+  #editButton {
+    display: none;
+  }
+  #checkNameLastName{
+    display: none;
+  }
+  #tableContainer {
+    display: none;
+    background: #add8e6;
+  }
+
+  #input-group{
+      padding: 50px;
+      margin: 10px auto;
+      box-sizing: border-box;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-direction: row;
+  }
+  .input-group-text{
+      width: 120px;
+  }
+  #confirmMembership {
+    display: none;
+  }
+
+
+
+
+
+
+  .form-content
+  {
+      padding: 5%;
+      border: 1px solid #ced4da;
+      margin-bottom: 2%;
+  }
+  .form-control{
+      border-radius:1.5rem;
+  }
+  .btnSubmit
+  {
+      border:none;
+      border-radius:1.5rem;
+      padding: 1%;
+      width: 20%;
+      cursor: pointer;
+      background: #0062cc;
+      color: #fff;
+  }

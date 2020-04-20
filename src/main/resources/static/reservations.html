@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>reservation</title>
+
+    <!--    jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--    data tables-->
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <!--    bootsrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!--    buttons-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="css/demoBoat.css">
+    <script src="js/reservation.js"></script>
+
+
+
+
+    <title>Hotel Molveno Boat Reservation Boat</title>
+</head>
+
+<body id="reservation">
+    </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Hotel Molveno Boat Rental</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="hotelMolvenoBoatMenu.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu<span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="reservations.html">Reservation</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="trip.html">Trip</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="boat.html">Boat</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="guests.html">Guests</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Boat Type<span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="rowing.html">Rowing Boat</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="electric.html">Electric</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="rafting.html">rafting</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container">
+        <h2>Reservation Form</h2>
+        <form class="form-horizontal" action="/action_page.php">
+            <div class="form-group col-md-4">
+                <label class="control-label col-sm-2">Boat Type</label>
+                <input id="boatType" type="text" class="form-control" placeholder="boatType ." name="Boat Type">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="checkInDate">Check In Date</label>
+                <input type="datetime-local" class="form-control " id="checkInDate" placeholder="checkInDate">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="checkOutDate">Check Out Date</label>
+                <input type="datetime-local" class="form-control " id="checkOutDate" placeholder="checkOutDate">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="startTime">Start time</label>
+                <input type="time" class="form-control " id="startTime" placeholder="startTime">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="duration">Duration</label>
+                <input type="number" class="form-control " id="duration" placeholder="duration">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="name"> Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="number" class="form-control" id="phoneNumber" placeholder="phone Number">
+            </div>
+
+            <button id="getMakeReservation" type="button" class="btn btn-primary">Make Reservation</button>
+        </form>
+    </div>
+
+
+
+    <!--<button id="postButton" type="button" class="btn btn-primary">Reservation List</button>-->
+
+
+    <!--<div class="container-fluid">-->
+    <table class="table table-hover" id="reservationShowTable">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Boat Type</th>
+                <th scope="col">Check in time</th>
+                <th scope="col">Check out</th>
+                <th scope="col">Start Time</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Guest Name</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">Cancel</th>
+
+            </tr>
+        </thead>
+        <tbody id="reservationContainer" class="table table-striped">
+        </tbody>
+    </table>
+    <!--</div >-->
+    <div class="container-fluid" id="reservationListContainer">
+        <h1 style="color:white">RESERVATION LIST</h1>
+        <table id="tableReservationList" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Reservation Number</th>
+                    <th>Guest Name</th>
+                    <th>Room Number</th>
+                    <th>Check In Date</th>
+                    <th>Check Out Date</th>
+                    <th>Number Of Guests</th>
+                    <th>Total Price</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+
+</html>

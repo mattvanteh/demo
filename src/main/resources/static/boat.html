@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--    jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--    data tables-->
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <!--    bootsrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!--    buttons-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+
+    <!-- Local CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="\css\demoBoat.css">
+    <script src="js/boat.js"></script>
+
+    <title> Hotel Molveno Boat Rental</title>
+</head>
+
+<body id="boat">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="okDelModalBtn">OK</button>
+                    <button type="button" class="btn btn-primary" id="saveEdtModalBtn">Save</button>
+                    <button type="button" class="btn btn-primary" id="saveCrtModalBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Hotel Molveno Boat Rental</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="hotelMolvenoBoatMenu.html">Home</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Menu<span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="reservations.html">Reservation</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="trip.html">Trip</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="boat.html">Boats</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="guests.html">Guests</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Boat Type<span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="rowing.html">Rowing Boat</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="electric.html">Electric</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="rafting.html">Rafting</a>
+                    <div class="dropdown-divider"></div>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+    </nav>
+    <div id="">
+
+
+    </div>
+    <br />
+
+
+
+    <div class="container-fluid">
+
+        <form id="formEditBoat">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="boatNumberEdit">Boat Number</label>
+                    <input type="text" class="form-control" id="boatNumberEdit">
+                </div>
+                <!--            <div class="form-group col-md-6">-->
+                <!--                <label for="maxBedsEdit">Max Beds</label>-->
+                <!--                <input type="number" class="form-control" id="maxBedsEdit">-->
+                <!--            </div>-->
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="boatPriceEdit">Boat Price</label>
+                    <!--                <select id="boatPriceEdit">-->
+                    <!--                    <option value = "minPrice">Min nPrice</option>-->
+                    <!--                    <option value = "actualPrice">Actual Price</option>-->
+                    <!--                </select>-->
+                    <input type="number" class="form-control" id="boatPriceEdit">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-14">
+                    <label for="boatTypeEdit">Boat Type</label>
+                    <select id="boatTypeEdit">
+                        <option value="Rowing">Rowing</option>
+                        <option value="Rafting">Rafting</option>
+                        <option value="Elecrical">Electrical</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="boatNumberOfSeatEdit">Boat number of seat</label>
+                    <select id="boatNumberOfSeatEdit">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <!--                <input type="text" class="form-control" id="boatNumberOfSeatEdit">-->
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <label for="boatActualPriceEdit">Actual Price</label>
+                    <!--                <select id="actualPrice">-->
+                    <!--&lt;!&ndash;                    <option value = "minPrice">Min price</option>&ndash;&gt;-->
+                    <!--                    <option value = "actualPrice">Actual Price</option>-->
+                    <!--                </select>-->
+                    <input type="number" class="form-control" id="boatActualPriceEdit">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-fluid">
+        <table id="tableShowBoat" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Boat Type</th>
+                    <th>Boat Price</th>
+                    <th>Boat Number</th>
+                    <th>Boat number of seat</th>
+                    <th>Actual Price</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
